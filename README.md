@@ -10,6 +10,12 @@ Uses the `AudioPlaybackConnection` API added in Windows 10 version 2004.
 - A phone (or other device) that supports A2DP, paired first in
   Settings > Devices > Bluetooth
 
+## Download
+
+Get the latest zip from the [Releases page](https://github.com/InfiArtt/bt-audio-sink/releases),
+extract it anywhere and run `BluetoothAudioSink.exe` (or `PCToPhone.exe`).
+No Python needed.
+
 ## Usage
 
 1. Pair your phone with the PC in Windows Settings.
@@ -70,8 +76,10 @@ py -3.10 -m venv .venv
 
 ```
 .venv\Scripts\python -m pip install pyinstaller
-.venv\Scripts\pyinstaller --onefile --windowed --name BluetoothAudioSink bt_audio_sink.py
+.venv\Scripts\pyinstaller build.spec
 ```
+
+Both programs end up in `dist\BluetoothAudioSink`, sharing one `_internal` folder.
 
 ## License
 
