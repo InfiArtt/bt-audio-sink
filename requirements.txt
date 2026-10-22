@@ -1,0 +1,12 @@
+wxPython
+winrt-runtime
+winrt-Windows.Media.Audio
+winrt-Windows.Devices.Enumeration
+winrt-Windows.Foundation
+winrt-Windows.Foundation.Collections
+numpy
+soundcard
+aiohttp
+pycaw
+comtypes
+scipy
